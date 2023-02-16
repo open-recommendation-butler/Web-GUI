@@ -1,9 +1,19 @@
 # Web-GUI
 This is the web GUI for Open Recommendation Butler. It's a light React frontend to use in combination with the powerful search and recommendation backend ORB. 
 
+<a href="https://open-recommendation-butler.tech/">-> Live Demo</a>
+
+## Requirements
+
+You need to have Node.js and npm installed on your machine to run the web GUI locally. More information here: [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs alle the packages needed to run the app in the developement mode. Make sure to run this command before you try "npm start".
 
 ### `npm start`
 
