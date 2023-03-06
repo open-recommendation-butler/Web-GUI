@@ -182,8 +182,12 @@ function SearchPage() {
           {results && !showFilters &&
             <div className="mt-2 pb-1 ml-4">
               <div className="text-sm text-gray-600">{results.hitCount} results in {results.took}s</div>
-              {results.suggestion &&
-                <div className="text-gray-600">Meintest du: <a href={`/search?q=${results.suggestion}${contentType ? '&content_type=' + contentType : ''}${category ? '&category=' + category : ''}${publisher ? '&publisher=' + publisher : ''}`}><span className="text-slate-800" dangerouslySetInnerHTML={{__html: results.suggestion_html}} /></a></div>
+              {results.correction &&
+                <div className="text-gray-600">Meintest du:&nbsp;
+                  <a href={`/search?q=${results.correction}${contentType ? '&content_type=' + contentType : ''}${category ? '&category=' + category : ''}${publisher ? '&publisher=' + publisher : ''}`}>
+                    <span className="text-slate-800" dangerouslySetInnerHTML={{__html: results.correction_html}} />
+                  </a>
+                </div>
               }
             </div>
           }
